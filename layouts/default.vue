@@ -14,7 +14,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    trackPageview() {
+      this.$gtag.pageview({
+        page_title: document.title,
+        page_path: document.location.pathname
+      });
+    }
+  },
+  mounted() {
+    this.trackPageview();
+  }
+};
 </script>
 
 <style scoped>
