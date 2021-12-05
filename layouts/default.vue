@@ -1,20 +1,19 @@
 <template>
   <div class="app">
-    <header>
-        <div class="logo">elcarpios</div>
-        <nav></nav>
-    </header>
+    <Header />
     <main>
         <slot />
     </main>
-    <footer>
-        <div><i>This my personal site, enjoy it</i></div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from 'components/Skeleton/Header.vue';
+import Footer from 'components/Skeleton/Footer.vue';
+
 export default {
+  components: { Header, Footer },
   methods: {
     trackPageview() {
       this.$gtag.pageview({
@@ -37,30 +36,8 @@ export default {
     flex-direction: column;
   }
 
-  header {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-  }
-
-  header .logo {
-    color: #3DA5D9;
-    font-family: 'Carattere', cursive;
-    font-size: 40px;
-  }
-
   main {
     flex-grow: 1;
     padding: 0 15px;
-  }
-
-  footer {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #3DA5D9;
   }
 </style>

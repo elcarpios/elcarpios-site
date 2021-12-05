@@ -2,9 +2,11 @@ import { defineNuxtConfig } from 'nuxt3';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  alias: {},
+  alias: {
+    'components': '/components'
+  },
   css: [
-    '/static/assets/styles/main.css'
+    '/assets/styles/main.css'
   ],
   meta: {
     title: 'elcarpios site',
@@ -13,7 +15,7 @@ export default defineNuxtConfig({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'static/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   }
 })
