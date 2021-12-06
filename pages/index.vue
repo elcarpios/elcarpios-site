@@ -1,8 +1,7 @@
 <template>
   <div class="content">
     <div class="intro">
-      <nav>
-      </nav>
+      <NuxtLink class="logo-link" to="/"><div class="logo">elcarpios</div></NuxtLink>
       <div class="image">
         <img src="~/assets/images/me.png" />
       </div>
@@ -24,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
   .content {
     display: flex;
     flex-direction: column;
@@ -33,36 +32,37 @@ export default {
     top: 0;
     width: 100%;
     z-index: -1;
-  }
 
-  .content h1 {
-      margin-top: 15px;
-  }
+    .intro {
+      height: 250px;
+      width: 100%;
+      border-top: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      background-color: #262626;
 
-  .content .intro {
-    height: 250px;
-    width: 100%;
-    border-top: 1px solid black;
-    display: flex;
-  }
+      .logo-link {
+        align-self: center;
+        margin: 25px 0 0 40px;
 
-  .content .intro {
-    background-color: #262626;
-  }
+        .logo {
+          font-family: 'Carattere', cursive;
+          color: white;
+          font-size: 40px;
 
-  .content .intro nav {
-    flex-grow: 1;
-  }
+        }
+      }
 
-  .content .intro .image {
-    height: 250px;
-    width: 230px;
-  }
+      .image {
+        height: 250px;
+        width: 230px;
 
-  .content .intro .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
 
   .projects > * {

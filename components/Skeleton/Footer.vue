@@ -1,7 +1,7 @@
 <template>
   <footer>
-        <div><i>This my personal site, enjoy it</i></div>
-    </footer>
+        
+  </footer>
 </template>
 
 <script>
