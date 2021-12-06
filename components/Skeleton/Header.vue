@@ -3,14 +3,14 @@
     <nav>
       <ul>
         <li>
-          <a href="https://www.instagram.com/realcarpios/" target="_blank">
+          <ExternalLink href="https://www.instagram.com/elcarpios/">
             <img class="icon" src="~/assets/icons/instagram.svg" />
-          </a>
+          </ExternalLink>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/victor-carpio-fern%C3%A1ndez-845b13107/" target="_blank">
+          <ExternalLink href="https://www.linkedin.com/in/victor-carpio-fern%C3%A1ndez-845b13107/">
             <img class="icon" src="~/assets/icons/linkedin.svg" />
-          </a>
+          </ExternalLink>
         </li>
       </ul>
     </nav>
@@ -18,8 +18,10 @@
 </template>
 
 <script>
-export default {
+import ExternalLink from 'components/Basic/ExternalLink.vue';
 
+export default {
+  components: { ExternalLink }
 }
 </script>
 

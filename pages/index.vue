@@ -22,9 +22,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -56,7 +54,7 @@ export default {
 
         .hero-link {
           align-self: center;
-          margin: 30px 5px 0 0;
+          margin: 30px 10px 0 0;
 
           .text {
             font-size: 40px;
