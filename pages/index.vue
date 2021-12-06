@@ -1,7 +1,20 @@
 <template>
   <div class="content">
-    <iframe src="https://giphy.com/embed/Xil2BvdCBezkHmLisN" width="420" height="420" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    <h1>We are working on it</h1>
+    <div class="intro">
+      <nav>
+      </nav>
+      <div class="image">
+        <img src="~/assets/images/me.png" />
+      </div>
+    </div>
+    <div class="projects">
+      <div class="upcoming-projects">
+        <h2 class="title">Upcoming projects:</h2>
+      </div>
+      <div class="ended-projects">
+        <h2 class="title">Ended projects:</h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,12 +28,52 @@ export default {
   .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100%;
-    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 
   .content h1 {
       margin-top: 15px;
+  }
+
+  .content .intro {
+    height: 250px;
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+  }
+
+  .content .intro {
+    background-color: #262626;
+  }
+
+  .content .intro nav {
+    flex-grow: 1;
+  }
+
+  .content .intro .image {
+    height: 250px;
+    width: 230px;
+  }
+
+  .content .intro .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .projects > * {
+    padding: 15px;
+    min-height: 150px;
+  }
+
+  .projects .title {
+    font-family: 'Cookie';
+    font-weight: 100;
+    font-size: 28px;
+    color: #262626;
   }
 </style>

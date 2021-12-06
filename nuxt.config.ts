@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '/assets/styles/main.css'
   ],
   meta: {
-    title: 'elcarpios site',
+    title: 'elcarpios',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

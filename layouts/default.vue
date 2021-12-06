@@ -38,6 +38,5 @@ export default {
 
   main {
     flex-grow: 1;
-    padding: 0 15px;
   }
 </style>

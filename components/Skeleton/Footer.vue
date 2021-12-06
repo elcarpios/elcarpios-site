@@ -12,10 +12,10 @@ export default {
 
 <style>
   footer {
-    height: 60px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3DA5D9;
+    color: #262626;
   }
 </style>
